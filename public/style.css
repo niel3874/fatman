@@ -277,11 +277,10 @@ footer::before {
     }
   }
   
-  /* General video container */
-.video-section {
+  .video-section {
     display: flex;
     justify-content: center; /* Center the video horizontally */
-    align-items: center;     /* Center the video vertically */
+    align-items: center;     /* Center the video vertically if needed */
     width: 100%;
     margin: 0;
     padding: 0;
@@ -289,8 +288,8 @@ footer::before {
   
   .video-container {
     position: relative;
-    width: 90%;                /* Set width to 90% of the parent container */
-    max-width: 100%;           /* Ensure it doesn't exceed the full screen width */
+    width: 80%;                /* Set the width to 80% of the parent container (or any other value) */
+    max-width: 900px;          /* Limit the max width for larger screens */
     padding-bottom: 56.25%;    /* 16:9 aspect ratio */
     height: 0;
     overflow: hidden;          /* Prevents overflow */
@@ -305,26 +304,12 @@ footer::before {
     border: 0;                 /* Optional: remove iframe border */
   }
   
-  /* Allow scrolling on the homepage only */
-  body.homepage {
-    overflow-y: scroll;       /* Enable vertical scrolling */
-    height: 100%;              /* Full height of the page */
-  }
-  
+  /* Mobile view adjustments */
   @media (max-width: 768px) {
     .video-container {
-      width: 100%;              /* Full width for mobile */
+      width: 100%;              /* Full width for mobile screens */
+      max-width: 100%;
       padding-bottom: 56.25%;   /* Maintain the 16:9 aspect ratio */
     }
   }
-  
-  /* Desktop view */
-  @media (min-width: 1024px) {
-    .video-container {
-      width: 70%;               /* Adjust width on large screens */
-      max-width: 100%;
-      padding-bottom: 56.25%;   /* Maintain aspect ratio */
-    }
-  }
-  
   
