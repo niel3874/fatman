@@ -178,7 +178,9 @@ footer::before {
     width: 100%;
     height: 50px;
     background: linear-gradient(to top, #710e37, rgba(113, 14, 55, 0));
+    margin-top: 40px; /* Add extra space between footer and content above */
 }
+
 
 
 .about-page {
@@ -285,6 +287,8 @@ footer::before {
     padding: 0;
     margin-bottom: 120px; /* Increased margin to push the footer down */
 }
+
+
   
   /* Optional: If footer is too close, adjust it here */
   footer {
