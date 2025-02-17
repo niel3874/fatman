@@ -286,7 +286,7 @@ footer::before {
     width: 100%;
     margin: 0;
     padding: 0;
-    margin-bottom: 60px; /* Add margin to create space between the video and footer */
+    margin-bottom: 0px; /* Add margin to create space between the video and footer */
   }
   
   /* Optional: If footer is too close, adjust it here */
@@ -299,7 +299,7 @@ footer::before {
   .video-container {
     width: 100%;              /* Full width for mobile screens */
     max-width: 100%;
-    padding-bottom: 56.25%;   /* Maintain the 16:9 aspect ratio */
+    padding-bottom: 50%;   /* Maintain the 16:9 aspect ratio */
   }
 }
 
