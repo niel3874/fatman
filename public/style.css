@@ -167,7 +167,7 @@ footer {
     left: 0;
     height: 50px;
     box-shadow: none;
-
+    margin-top: 40px; /* Add extra space between footer and content above */
 }
 
 footer::before {
@@ -276,16 +276,15 @@ footer::before {
     }
   }
   
-/* Video Section - Add bottom margin */
-.video-section {
+  .video-section {
     display: flex;
     justify-content: center; /* Center the video horizontally */
     align-items: center;     /* Center the video vertically if needed */
     width: 100%;
     margin: 0;
     padding: 0;
-    margin-bottom: 0px; /* Add margin to create space between the video and footer */
-  }
+    margin-bottom: 120px; /* Increased margin to push the footer down */
+}
   
   /* Optional: If footer is too close, adjust it here */
   footer {
