@@ -235,58 +235,14 @@ footer::before {
     font-weight: bold;
     text-transform: uppercase; /* Make sure it's in uppercase */
     text-align: center;
+    margin-bottom: -30px;
 }
 
-.video-section {
-    width: 100%; /* Ensure it takes up the full width of the parent */
-    margin: 0; /* Optional: Remove any unwanted margin */
-    padding: 0; /* Optional: Remove any unwanted padding */
-  }
+
   
-  .video-container {
-    position: relative;
-    width: 100%;               /* Ensure the container takes up the full width */
-    padding-bottom: 56.25%;    /* Maintain 16:9 aspect ratio */
-    height: 0;                 /* Height controlled by padding-bottom */
-    overflow: hidden;          /* Prevents iframe from overflowing */
-  }
   
-  .video-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;               /* Full width */
-    height: 100%;              /* Full height */
-    border: 0;                 /* Remove iframe border */
-  }
-  
-  .welcome-text {
-    font-size: 2rem; /* Set an appropriate base font size */
-    padding: 20px;
-    text-align: center;
-    margin: 0 auto;
-    width: 90%; /* Limit width to 90% of the viewport width */
-    box-sizing: border-box; /* Ensure padding is included in width */
-  }
-  
-  @media (max-width: 768px) {
-    .welcome-text {
-      font-size: 1.5rem; /* Adjust font size for smaller screens */
-      width: 100%; /* Ensure it takes full width on smaller screens */
-      padding: 10px; /* Reduce padding for smaller screens */
-    }
-  }
-  
-  .video-section {
-    display: flex;
-    justify-content: center; /* Center the video horizontally */
-    align-items: center;     /* Center the video vertically if needed */
-    width: 100%;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .video-container {
+
+.video-container {
     position: relative;
     width: 80%;                /* Set the width to 80% of the parent container (or any other value) */
     max-width: 900px;          /* Limit the max width for larger screens */
@@ -304,12 +260,46 @@ footer::before {
     border: 0;                 /* Optional: remove iframe border */
   }
   
-  /* Mobile view adjustments */
+  
+  .welcome-text {
+    font-size: 2rem; /* Set an appropriate base font size */
+    padding: 20px;
+    text-align: center;
+    margin: 20px auto;
+    width: 90%; /* Limit width to 90% of the viewport width */
+    box-sizing: border-box; /* Ensure padding is included in width */
+  }
+  
   @media (max-width: 768px) {
-    .video-container {
-      width: 100%;              /* Full width for mobile screens */
-      max-width: 100%;
-      padding-bottom: 56.25%;   /* Maintain the 16:9 aspect ratio */
+    .welcome-text {
+      font-size: 1.5rem; /* Adjust font size for smaller screens */
+      width: 100%; /* Ensure it takes full width on smaller screens */
+      padding: 10px; /* Reduce padding for smaller screens */
     }
   }
   
+/* Video Section - Add bottom margin */
+.video-section {
+    display: flex;
+    justify-content: center; /* Center the video horizontally */
+    align-items: center;     /* Center the video vertically if needed */
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 60px; /* Add margin to create space between the video and footer */
+  }
+  
+  /* Optional: If footer is too close, adjust it here */
+  footer {
+    margin-top: 20px; /* Add space between footer and content above */
+  }
+
+/* Mobile view adjustments */
+@media (max-width: 768px) {
+  .video-container {
+    width: 100%;              /* Full width for mobile screens */
+    max-width: 100%;
+    padding-bottom: 56.25%;   /* Maintain the 16:9 aspect ratio */
+  }
+}
+
