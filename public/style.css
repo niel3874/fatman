@@ -260,3 +260,20 @@ footer::before {
     border: 0;                 /* Remove iframe border */
   }
   
+  .welcome-text {
+    font-size: 2rem; /* Set an appropriate base font size */
+    padding: 20px;
+    text-align: center;
+    margin: 0 auto;
+    width: 90%; /* Limit width to 90% of the viewport width */
+    box-sizing: border-box; /* Ensure padding is included in width */
+  }
+  
+  @media (max-width: 768px) {
+    .welcome-text {
+      font-size: 1.5rem; /* Adjust font size for smaller screens */
+      width: 100%; /* Ensure it takes full width on smaller screens */
+      padding: 10px; /* Reduce padding for smaller screens */
+    }
+  }
+  
