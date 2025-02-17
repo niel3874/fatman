@@ -1,0 +1,20 @@
+---
+import Burgermenu from "./burgermenu.astro";
+---
+
+<header class="navbar">
+    <nav>
+
+        <!-- Normal menu til desktop -->
+        <ul class="nav-links">
+            <li><a href="/">FORSIDE</a></li>
+            <li><a href="/interaktiv">INTERAKTIV</a></li>
+            <li><a href="/about">OM MASTER FATMAN</a></li>
+        </ul>
+
+        <!-- Burger-menu til mobil -->
+        <button id="burger-toggle">☰</button>
+
+        <Burgermenu />
+    </nav>
+</header>
