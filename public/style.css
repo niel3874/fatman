@@ -235,12 +235,10 @@ footer::before {
     font-weight: bold;
     text-transform: uppercase; /* Make sure it's in uppercase */
     text-align: center;
-    margin-bottom: -30px;
+    margin-bottom: 0px;
 }
 
 
-  
-  
 
 .video-container {
     position: relative;
