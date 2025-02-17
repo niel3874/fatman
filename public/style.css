@@ -260,10 +260,10 @@ footer::before {
   
   
   .welcome-text {
-    font-size: 2rem; /* Set an appropriate base font size */
-    padding: 20px;
+    font-size: 1.5rem; /* Set an appropriate base font size */
+    padding: 0px;
     text-align: center;
-    margin: 20px auto;
+    margin: 10px auto;
     width: 90%; /* Limit width to 90% of the viewport width */
     box-sizing: border-box; /* Ensure padding is included in width */
   }
