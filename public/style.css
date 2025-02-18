@@ -159,7 +159,7 @@ body {
             .welcome-text h1 {
                 font-size: 2rem; /* Reducerer skriftstørrelsen */
                 line-height: 1.2; /* Mindre afstand mellem linjerne */
-                padding: 0 10px; /* Tilføjer lidt margin i siderne */
+                padding: 10px; /* Tilføjer lidt margin i siderne */
                 word-wrap: break-word; /* Sørger for, at teksten tilpasser sig */
             }
     }
@@ -264,7 +264,7 @@ footer::before {
     color:  #f4ef74; /* yellow color */
    
     
-    margin-top: 100px; /* Center it */
+    margin-top: 50px; /* Center it */
 }
 .about-master-fatman {
     font-family: 'Script MT Bold', cursive !important;
