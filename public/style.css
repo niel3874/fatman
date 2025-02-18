@@ -16,22 +16,20 @@
 
 body {
     font-family: 'Impact', sans-serif;
-    color: #f8ee85;
+    color: #F8EE85; /* Korrekt farve */
     margin: 0;
     padding: 0;
     background: linear-gradient(to bottom, #230e43 0%, #3b0e4f 40%, #5b0e43 90%, #710e37 100%);
     text-align: center;
-    color:  #f4ef74;
-    overflow: hidden; /* Fjerner scrolling */
-    
-    /* Gør scrolling mulig KUN på forsiden */
-    .home-page {
-        overflow-y: auto;
-        height: 100vh;
-    }
-    
-    
+    overflow: hidden; /* Skjuler scrolling globalt */
 }
+
+/* Gør scrolling mulig KUN på forsiden */
+.home-page {
+    overflow-y: auto !important;
+    height: 100vh;
+}
+
 
 
 /* HEADER */
@@ -148,7 +146,6 @@ body {
                 font-size: 70px !important; /* Beholder samme størrelse */
                 margin-top: 100px;
                 margin-bottom: 50px;
-                padding: 10px;
             }
         
             .about-page p {
