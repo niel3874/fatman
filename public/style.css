@@ -164,11 +164,19 @@ body {
             }
     }
     
+
+
     /* Endnu mindre på meget små skærme */
 @media (max-width: 480px) {
     .welcome-text h1 {
         font-size: 1.7rem;
+        margin-top: 20px; /* Rykker overskriften op */
     }
+
+
+    .about-page p {
+        margin-top: -10px; /* Rykker tekstboksen tættere på overskriften */
+    }    
 }
 
 
