@@ -386,8 +386,8 @@ footer::before {
     padding-bottom: 50%;   /* Maintain the 16:9 aspect ratio */
   }
   .welcome-text h1 {
-    font-size: 1.8rem; /* Reducerer størrelsen */
-    line-height: 1.2; /* Reducerer afstanden mellem linjerne */
+    font-size: 3rem; /* Reducerer størrelsen */
+    line-height: 0.8; /* Reducerer afstanden mellem linjerne */
     padding: 0 10px; /* Giver lidt plads på siderne */
     word-wrap: break-word; /* Sikrer at ordene bliver brudt korrekt */
 }
