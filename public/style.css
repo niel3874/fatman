@@ -206,13 +206,7 @@ h1 {
     animation: text-pulse 2s infinite alternate;
 }
 
-/* HEADER */
 
-header {
-
-    
-    
-}
 
 /* FOOTER */
 footer {
@@ -276,7 +270,7 @@ footer::before {
     font-family: 'Script MT Bold';
     margin-top: -70px; /* Løfter overskriften */
     color:  #f4ef74; /* yellow color */
-    background: rgba(0, 0, 0, 0.6); /* White with 50% transparency */
+background: rgba(0, 0, 0, 0.6); /* White with 50% transparency */
     margin-top: 50px; /* Center it */
 }
 .about-master-fatman {
@@ -401,7 +395,7 @@ footer::before {
   .welcome-text h1 {
     font-size: 3rem; /* Reducerer størrelsen */
     line-height: 0.8; /* Reducerer afstanden mellem linjerne */
-    padding: 10px; /* Giver lidt plads på siderne */
+    padding: 0 10px; /* Giver lidt plads på siderne */
     word-wrap: break-word; /* Sikrer at ordene bliver brudt korrekt */
 }
 }
