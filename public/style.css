@@ -73,7 +73,7 @@ body {
 .nav-links li a {
     font-family: 'Script MT Bold', sans-serif;
     font-size: 20px;
-    color: #f4ef74 !important; /* LOVE (Lyserød) */
+    color:#F8EE85 !important;
     text-decoration: none;
     font-weight: bold;
 }
@@ -266,11 +266,9 @@ footer::before {
 .about-page h1 {
     font-size: 100px;
     font-family: 'Script MT Bold';
-    margin-top: -70px; /* Løfter overskriften */
-    color:  #f4ef74; /* yellow color */
+    margin-top: 10px; /* Løfter overskriften */
+    color: #F9C539  /* yellow color */
    
-    
-    margin-top: 50px; /* Center it */
 }
 .about-master-fatman {
     font-family: 'Script MT Bold', cursive !important;
@@ -319,12 +317,6 @@ footer::before {
     border: 0;                 /* Optional: remove iframe border */
   }
   
-  @font-face {
-    font-family: 'Script MT Bold';
-    src: url('/fonts/ScriptMTBold.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
 
   .welcome-text {
     font-size: 1.5rem; /* Set an appropriate base font size */
