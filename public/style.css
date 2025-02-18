@@ -1,10 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Chango&display=swap');
+/* 🔹 Importér skrifttyper først (øverst i CSS-filen) */
+@font-face {
+    font-family: 'Script MT Bold';
+    src: url('/fonts/ScriptMTBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
-
+@font-face {
+    font-family: 'Impact', sans-serif;
+    src: url('/fonts/Impact.woff') format('woff'); 
+    font-weight: normal;
+    font-style: normal;
+}
 
 
 body {
-    font-family: 'Chango', cursive; /* Groovy retro-stil */
+    font-family: 'Impact', sans-serif;
+    color: #f8ee85;
     margin: 0;
     padding: 0;
     background: linear-gradient(to bottom, #230e43 0%, #3b0e4f 40%, #5b0e43 90%, #710e37 100%);
@@ -54,7 +66,7 @@ body {
 }
 
 .nav-links li a {
-    font-family: 'Chango', cursive;
+    font-family: 'Script MT Bold', sans-serif;
     font-size: 20px;
     color: #f4ef74 !important; /* LOVE (Lyserød) */
     text-decoration: none;
@@ -102,6 +114,8 @@ body {
 
 #burger-menu ul li a {
     color: #f4ef74;
+    font-family: 'Impact', sans-serif;
+    color: #f8ee85;
     text-decoration: none;
 }
 
@@ -122,6 +136,22 @@ body {
         font-size: 14px; /* Reduce font size on smaller screens */
         height: 40px; /* Adjust height if needed */
     }
+    @media (max-width: 768px) 
+        {
+            .about-page h1 {
+                font-size: 70px !important; /* Beholder samme størrelse */
+                margin-top: 100px;
+                margin-bottom: 50px;
+            }
+        
+            .about-page p {
+                font-size: 20px !important;
+                max-width: 400px;
+                margin-top: -20px;
+                margin-bottom: 200px;
+            }
+    }
+    
     
 }
 
@@ -211,34 +241,40 @@ footer::before {
     z-index: -2;
 }
 .about-page h1 {
-    font-size: 50px;
+    font-size: 100px;
+    font-family: 'Script MT Bold';
     margin-top: -50px; /* Løfter overskriften */
     color:  #f4ef74; /* yellow color */
-    background: rgba(0, 0, 0, 0.6); /* White with 50% transparency */
+   
     
-
     margin-top: 100px; /* Center it */
+}
+.about-master-fatman {
+    font-family: 'Script MT Bold', cursive !important;
+    color: #F9C539 !important;
 }
 
 .about-page p {
-    margin-top: -33px; /* Løfter brødteksten */
+    margin-top: -73px; /* Løfter brødteksten */
+    font-size: 20px;
+    font-family: 'Script MT Bold';
     color: #f4ef74; /* yellow color */
     background: rgba(0, 0, 0, 0.6); /* White with 50% transparency */
     padding: 0.05rem;
     border-radius: 10px; /* Smooth rounded corners */
     backdrop-filter: blur(0px); /* Blurred effect */
     max-width: 400px; /* Limit width for readability */
-    margin-bottom: 400px; /* Center it */
+    margin-bottom: 300px; /* Center it */
 }
 
 
 .love-peace-cake {
-    color: #f4ef74 !important; /* LOVE (Lyserød) */
-    font-weight: bold;
-    text-transform: uppercase; /* Make sure it's in uppercase */
+    font-family: 'Impact', sans-serif !important;
+    color: #F8EE85 !important; /* Korrekt farve */
+    text-transform: uppercase;
     text-align: center;
-    margin-bottom: 0px;
 }
+
 
 
 
@@ -260,16 +296,24 @@ footer::before {
     border: 0;                 /* Optional: remove iframe border */
   }
   
-  
+  @font-face {
+    font-family: 'Script MT Bold';
+    src: url('/fonts/ScriptMTBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
   .welcome-text {
     font-size: 1.5rem; /* Set an appropriate base font size */
     padding: 0px;
     text-align: center;
     margin: 0px;
-    width: 90%; /* Limit width to 90% of the viewport width */
+    width: 100%; /* Limit width to 90% of the viewport width */
     box-sizing: border-box; /* Ensure padding is included in width */
+    color: #f9c539;
+    font-family: 'Script MT Bold', cursive;
   }
-  
+
   @media (max-width: 768px) {
     .welcome-text {
       font-size: 1.5rem; /* Adjust font size for smaller screens */
@@ -277,8 +321,30 @@ footer::before {
       padding: 10px; /* Reduce padding for smaller screens */
     }
   }
+  /* Gør kun de specifikke tekster til Script MT Bold */
+.welcome-text, 
+.interactive-title, 
+.about-title {
+    font-family: 'Script MT Bold', cursive;
+    color: #f9c539; /* Farven til Script MT Bold tekster */
+}
+
+/* Kun specifikke tekster skal bruge Script MT Bold */
+.welcome-text h1 {
+    font-family: 'Script MT Bold', cursive;
+    color: #f9c539;
+    font-size: 4rem; /* Gør skriften større */
+    line-height: 1; /* Tilpas linjeafstand */
+}
+
+.welcome-text p {
+    font-family: 'Impact', sans-serif !important;
+    color: #F8EE85 !important;
+}
+
   
-  .video-section {
+
+.video-section {
     display: flex;
     justify-content: center; /* Center the video horizontally */
     align-items: center;     /* Center the video vertically if needed */
