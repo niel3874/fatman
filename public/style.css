@@ -24,6 +24,13 @@ body {
     color:  #f4ef74;
     overflow: hidden; /* Fjerner scrolling */
     
+    /* Gør scrolling mulig KUN på forsiden */
+    .home-page {
+        overflow-y: auto;
+        height: 100vh;
+    }
+    
+    
 }
 
 
@@ -136,8 +143,7 @@ body {
         font-size: 14px; /* Reduce font size on smaller screens */
         height: 40px; /* Adjust height if needed */
     }
-    @media (max-width: 768px) 
-        {
+  
             .about-page h1 {
                 font-size: 70px !important; /* Beholder samme størrelse */
                 margin-top: 100px;
@@ -150,10 +156,21 @@ body {
                 margin-top: -20px;
                 margin-bottom: 200px;
             }
+            .welcome-text h1 {
+                font-size: 2rem; /* Reducerer skriftstørrelsen */
+                line-height: 1.2; /* Mindre afstand mellem linjerne */
+                padding: 0 10px; /* Tilføjer lidt margin i siderne */
+                word-wrap: break-word; /* Sørger for, at teksten tilpasser sig */
+            }
     }
     
-    
+    /* Endnu mindre på meget små skærme */
+@media (max-width: 480px) {
+    .welcome-text h1 {
+        font-size: 1.7rem;
+    }
 }
+
 
 
 
@@ -368,5 +385,11 @@ footer::before {
     max-width: 100%;
     padding-bottom: 50%;   /* Maintain the 16:9 aspect ratio */
   }
+  .welcome-text h1 {
+    font-size: 1.8rem; /* Reducerer størrelsen */
+    line-height: 1.2; /* Reducerer afstanden mellem linjerne */
+    padding: 0 10px; /* Giver lidt plads på siderne */
+    word-wrap: break-word; /* Sikrer at ordene bliver brudt korrekt */
+}
 }
 
