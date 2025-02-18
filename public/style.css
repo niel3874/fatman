@@ -281,7 +281,7 @@ footer::before {
     border-radius: 10px; /* Smooth rounded corners */
     backdrop-filter: blur(0px); /* Blurred effect */
     max-width: 400px; /* Limit width for readability */
-    margin-bottom: 300px; /* Center it */
+    margin-bottom: 400px; /* Center it */
 }
 
 
