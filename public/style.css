@@ -174,7 +174,7 @@ body {
     }
 
 
-    .about-page p {
+.about-page p {
         margin-top: -10px; /* Rykker tekstboksen tættere på overskriften */
     }    
 }
@@ -270,7 +270,8 @@ footer::before {
     font-family: 'Script MT Bold';
     margin-top: -70px; /* Løfter overskriften */
     color:  #f4ef74; /* yellow color */
-background: rgba(0, 0, 0, 0.6); /* White with 50% transparency */
+   
+    
     margin-top: 50px; /* Center it */
 }
 .about-master-fatman {
