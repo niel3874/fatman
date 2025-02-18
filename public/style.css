@@ -148,6 +148,7 @@ body {
                 font-size: 70px !important; /* Beholder samme størrelse */
                 margin-top: 100px;
                 margin-bottom: 50px;
+                padding: 10px;
             }
         
             .about-page p {
