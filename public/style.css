@@ -71,7 +71,7 @@ body {
 }
 
 .nav-links li a {
-    font-family: 'Script MT Bold', sans-serif;
+    font-family: 'Impact', sans-serif !important;
     font-size: 20px;
     color:#F8EE85 !important;
     text-decoration: none;

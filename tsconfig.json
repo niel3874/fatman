@@ -4,6 +4,6 @@
     "verbatimModuleSyntax": true,
     "preserveValueImports": false
   },
-  "include": [".astro/types.d.ts", "**/*"],
+  "include": [".astro/types.d.ts", "src/**/*.astro"] ,
   "exclude": ["dist"]
 }

@@ -3,4 +3,4 @@
   publish = "dist"
   functions = "netlify/functions"
 
-# Optionally, environment variables, redirects, etc.
+# Optionally, environment variables, redirects, etc.curl -X GET "https://fatman1.netlify.app/.netlify/functions/data"
