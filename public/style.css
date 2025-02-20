@@ -78,6 +78,16 @@ body {
     font-weight: bold;
 }
 
+.nav-links li a:visited,
+.nav-links li a:active,
+.nav-links li a:hover,
+.nav-links li a.active {
+    color: #F8EE85 !important;
+    text-decoration: none !important;
+    font-weight: bold !important;
+}
+
+
 
 
 /* BURGER-MENU */
