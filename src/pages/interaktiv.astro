@@ -1,22 +1,10 @@
 ---
-import Header from '../components/header.astro';
-import Footer from '../components/footer.astro';
 import Layout from '../layouts/Layout.astro';
 ---
 
-<!DOCTYPE html>
-<html lang="da">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interaktiv Side</title>
-    <link rel="stylesheet" href="/styles/style.css">
-</head>
-<body>
-
-    <Layout>
+<Layout>
     <main>
-       
+        <h1>Master Fatman</h1>
 
         <!-- Indsætter interactiveSvg.html via iframe -->
         <iframe 
@@ -27,7 +15,4 @@ import Layout from '../layouts/Layout.astro';
         ></iframe>
 
     </main>
-    <Layout/>
-
-</body>
-</html>
+</Layout>

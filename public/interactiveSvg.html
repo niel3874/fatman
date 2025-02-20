@@ -1,18 +1,27 @@
-<!doctype html>
-<html>
-  <head>
+<!DOCTYPE html>
+<html lang="da">
+<head>
     <meta charset="UTF-8">
     <title>Interaktiv SVG Test</title>
     <script type="text/javascript" src="interactiveSvg.js"></script>
     <style>
-      #map{
-        max-width: 50%;
-        margin:0 auto;
-
-      }
+        /* 🚀 Gør hele siden gennemsigtig */
+        html, body {
+            background: none !important; /* Gennemsigtig baggrund */
+            margin: 0;
+            padding: 0;
+        }
+        /* 🚀 Sørg for, at SVG ikke har en hvid baggrund */
+        svg {
+            background: none !important;
+        }
+        #map {
+            max-width: 50%;
+            margin: 0 auto;
+        }
     </style>
-  </head>
-  <body>
+</head>
+<body>
     <div id="map"></div>
-  </body>
+</body>
 </html>
